@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script>
+        function number(evt){
+            var char = String.fromCharCode(evt.which);
+
+            if(!(/[0-9]/.test(char))){
+                evt.preventDefault();
+            }
+
+        }
+
+        function scrolltop(){
+             window.scrollTo(0, 0);
+        }
+
+        function logout(){
+        return confirm('Are you sure you want to Logout?');
+        }
+
+    </script>
+
+    <title> Admin Page </title>
+
+    <h1 align="center">Admin Page</h1>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+        body {
+            background-image: url(images/recordbg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            padding: 10px;
+        }
+
+        input[type="submit"] {
+            width: 300px;
+            height: 50px;
+            border: 1px solid;
+            background: #a89639;
+            border-radius: 25px;
+            font-size: 14px;
+            border-color: #a89639;
+            color: black;
+            font-weight: 700;
+            cursor: pointer;
+            outline: none;
+            margin:10px;
+
+        }
+
+        input[type="submit"]:hover {
+            text-shadow: #666666;
+            background-color: #ebe891;
+            border-color: white;
+            transition: 1s;
+        }
+    </style>
+
+    <body>
+            <form action="get_users.php" method="post">
+            <center><input type="submit" name="register" value="Registered Users"></center>
+            </form>
+            <form action="get_reservation.php" method="post">
+            <center><input type="submit" name="register" value="Reservations"></center>
+            </form>
+            <form action="get_profile.php" method="post">
+            <center><input type="submit" name="register" value="Profiles"></center>
+            </form>
+            <form action="AngelineSantos_login.php" method="post">
+            <center><input type="submit" name="register" value="Logout" onclick='return logout()'></center>
+
+            </form>
+    </body>
+
+</html>

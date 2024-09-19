@@ -1,0 +1,160 @@
+<html>
+
+<head>
+<script>
+        function number(evt){
+            var char = String.fromCharCode(evt.which);
+
+            if(!(/[0-9]/.test(char))){
+                evt.preventDefault();
+            }
+
+        }
+
+        function scrolltop(){
+             window.scrollTo(0, 0);
+        }
+
+        function logout(){
+        return confirm('Are you sure you want to log out?');
+        }
+
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-image: url(images/filfood.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 110px;
+            cursor: pointer;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #ebdfa4;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+        .banner-area {
+            width: 100%;
+            height: 70vh;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 2vw;
+            color: #fff;
+        }
+
+        .banner-area h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 80px;
+            margin: 0 0 25px;
+            animation: animate 2s 1;
+        }
+        .banner-area p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            margin: 0 0 25px;
+            animation: animate 2s 1;
+        }
+
+        .button {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            transition: .6s;
+            text-decoration: none;
+            padding: 10px 45px;
+            color: #fff;
+            border: 2px solid #fff;
+            opacity: 80%;
+            animation: animate 2s 1;
+        }
+
+        .button:hover {
+            background-color: #fff;
+            color: #262626;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: scale (0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="AngelineSantos_menuuser.html">Menu</a></li>
+                <li><a href="AngelineSantos_reservation.html">Reservation</a></li>
+                <li><a href="AngelineSantos_aboutususer.html">About Us</a></li>
+                <li><a href="AngelineSantos_galleryuser.html">Gallery</a></li>
+                <li><a href = "AngelineSantos_login.php" onclick='return logout()'>Logout</a></li>
+                <li><a href="AngelineSantos_registration.html">Register</a></li>
+            </ul>
+        </div>
+        <div class="banner-area">
+            <h2>Resto Reserve</h2>
+            <p>Where every flavor tells a story.</p>
+        </div>
+</body>
+
+</html>

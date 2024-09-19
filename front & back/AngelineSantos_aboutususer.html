@@ -1,0 +1,357 @@
+<html>
+
+<head>
+<script>
+        function number(evt){
+            var char = String.fromCharCode(evt.which);
+
+            if(!(/[0-9]/.test(char))){
+                evt.preventDefault();
+            }
+
+        }
+
+        function scrolltop(){
+             window.scrollTo(0, 0);
+        }
+
+        function logout(){
+        return confirm('Are you sure you want to log out?');
+        }
+
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background: black;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 110px;
+            cursor: pointer;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #ebdfa4;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>About Us | Sariling-Atin</title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="AngelineSantos_userhomepage.html">Home</a></li>
+                <li><a href="AngelineSantos_menuuser.html">Menu</a></li>
+                <li><a href="AngelineSantos_reservation.html">Reservation</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="AngelineSantos_galleryuser.html">Gallery</a></li>
+                <li><a href = "AngelineSantos_login.php" onclick='return logout()'>Logout</a></li>
+                <li><a href="AngelineSantos_registration.html">Register</a></li>
+            </ul>
+        </div>
+
+</html>
+<html lang="en" dir="ltr">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f1f1;
+        }
+
+        .about-section {
+            background: url(images/aboutpic.jpg) no-repeat left;
+            background-size: 55%;
+            background-color: #fdfdfd;
+            overflow: hidden;
+            padding: 100px 0;
+        }
+
+        .inner-container {
+            width: 55%;
+            float: right;
+            background-color: #fdfdfd;
+            padding: 150px;
+            box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .inner-container h1 {
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        .text {
+            font-size: 13px;
+            color: #545454;
+            line-height: 30px;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width:1200px) {
+            .inner-container {
+                padding: 80px;
+            }
+        }
+
+        @media screen and (max-width:1000px) {
+            .about-section {
+                background-size: 100%;
+                padding: 100px 40px;
+            }
+            .inner-container {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            .about-section {
+                padding: 0;
+            }
+            .inner-container {
+                padding: 60px;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="about-section">
+        <div class="inner-container">
+            <h1>About Us</h1>
+            <p class="text">
+            Sariling-Atin Restaurant is mainly part of the food industry. It is a traditional restaurant that serves original Filipino dishes, 
+            providing the best quality meals, affordable prices, and healthy foods to anyone who wants to eat. The Sariling-Atin Restaurant aims 
+            to give experience with family and friends a great ambiance and environment while delicious food is served.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<html lang="en">
+<head>
+  <title>Footer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	padding:0;
+    margin:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+    margin-top:0;
+    margin-bottom:50px;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ebdfa4;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+p {
+    color:white;
+}
+.cr {
+    width: 100%;
+    height: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.line {
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+}
+.line p {
+    margin-top:60px;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>Contact Us</h4>
+  	 			<ul>
+  	 			    <p>Sariling Atin St. Malolos Bulacan</p>
+  	 				<p>sariling.atin@gmail.com</p>
+  	 				<p>044-123-456</p>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-youtube"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+       <div class="line">
+        <div class="cr">
+            <p>© 2022 Copyright Sarling-Atin Restaurant<p>
+            </div>
+        </div>
+  </footer>
+
+</body>
+</html>
+

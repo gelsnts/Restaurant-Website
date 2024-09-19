@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+        }
+
+        .banner {
+            background-color:black;
+        }
+
+        .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 110px;
+            cursor: pointer;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: #ebdfa4;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Gallery | Sariling-Atin</title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="AngelineSantos_homepage.html">Home</a></li>
+                <li><a href="AngelineSantos_menu.html">Menu</a></li>
+                <li><a href="AngelineSantos_login.php">Reservation</a></li>
+                <li><a href="AngelineSantos_aboutus.html">About Us</a></li>
+                <li><a href="AngelineSantos_gallery.html">Gallery</a></li>
+                <li><a href="AngelineSantos_login.php">Login</a></li>
+                <li><a href="AngelineSantos_registration.html">Register</a></li>
+            </ul>
+        </div>
+
+</html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            padding: 0 0 1px 0;
+        }
+
+        body {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .container .wrapper {
+            width: 800px;
+            height: 400px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+            margin: 5rem auto;
+            overflow: hidden;
+        }
+
+        .container .wrapper-holder {
+            display: grid;
+            grid-template-columns: repeat(6, 100%);
+            height: 100%;
+            width: 100%;
+            animation: slider 30s ease-in-out infinite alternate;
+        }
+
+        .container #slider-img-1 {
+            background-image: url(images/food1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container #slider-img-2 {
+            background-image: url(images/food3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container #slider-img-3 {
+            background-image: url(images/food5.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container #slider-img-4 {
+            background-image: url(images/food7.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container #slider-img-5 {
+            background-image: url(images/food2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container #slider-img-6 {
+            background-image: url(images/food8.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .container .button-holder .button {
+            background-color: white;
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: .3rem;
+        }
+
+        .container .button-holder {
+            position: absolute;
+            left: 45%;
+            bottom: 0%;
+        }
+
+        .button:hover {
+            box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
+        }
+
+        @keyframes slider {
+            0% {
+                transform: translateX(0%);
+            }
+            10% {
+                transform: translateX(-100%);
+            }
+            20% {
+                transform: translateX(-100%);
+            }
+            30% {
+                transform: translateX(-200%);
+            }
+            40% {
+                transform: translateX(-200%);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            60% {
+                transform: translateX(-300%);
+            }
+            70% {
+                transform: translateX(-300%);
+            }
+            80% {
+                transform: translateX(-300%);
+            }
+            90% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SLIDER</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="slider-img-1"></div>
+                <div id="slider-img-2"></div>
+                <div id="slider-img-3"></div>
+                <div id="slider-img-4"></div>
+                <div id="slider-img-5"></div>
+                <div id="slider-img-6"></div>
+            </div>
+        </div>
+        <div class="button-holder">
+            <a href="#slider-img-1" class="button"></a>
+            <a href="#slider-img-2" class="button"></a>
+            <a href="#slider-img-3" class="button"></a>
+            <a href="#slider-img-4" class="button"></a>
+            <a href="#slider-img-5" class="button"></a>
+            <a href="#slider-img-6" class="button"></a>
+        </div>
+        <div class="button-holder">
+            <a href="#slider-img-1" class="button"></a>
+            <a href="#slider-img-2" class="button"></a>
+            <a href="#slider-img-3" class="button"></a>
+            <a href="#slider-img-4" class="button"></a>
+            <a href="#slider-img-5" class="button"></a>
+            <a href="#slider-img-6" class="button"></a>
+        </div>
+        <div class="button-holder">
+            <a href="#slider-img-1" class="button"></a>
+            <a href="#slider-img-2" class="button"></a>
+            <a href="#slider-img-3" class="button"></a>
+            <a href="#slider-img-4" class="button"></a>
+            <a href="#slider-img-5" class="button"></a>
+            <a href="#slider-img-6" class="button"></a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<html lang="en">
+<head>
+  <title>Footer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0;
+}
+p {
+    color:white;
+}
+.cr {
+    width: 100%;
+    height: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.line {
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+}
+.line p {
+    margin-top:60px;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <footer class="footer">
+       <div class="line">
+        <div class="cr">
+            <p>© 2022 Copyright Sarling-Atin Restaurant<p>
+            </div>
+        </div>
+  </footer>
+
+</body>
+</html>

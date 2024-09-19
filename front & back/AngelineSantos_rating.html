@@ -1,0 +1,307 @@
+<html>
+
+<head>
+    <title>Rating</title>
+    <style>
+        * {
+            padding: 5px;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background: url('images/wood.jpeg') no-repeat;
+            background-size: cover;
+        }
+
+        .homepage-rating {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 0;
+
+        }
+
+        p {
+            color: aliceblue;
+            font-size: 15px;
+            margin: 3px 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content {
+            width: 20%;
+            margin: 15px;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            border-radius: 15px;
+            cursor: pointer;
+            padding-top: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5), 0 10px 10px rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            text-align: center;
+            color: aliceblue;
+            padding-top: 0 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="homepage-rating">
+        <div class="content">
+            <img src="images/pecan.png" alt="Pecan Crusted Chicken Breast">
+            <p>Pecan Crusted Chicken Breast</p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td><input type="radio" name="row-1" data-col="1"></td>
+                    <td><input type="radio" name="row-1" data-col="2"></td>
+                    <td><input type="radio" name="row-1" data-col="3"></td>
+                    <td><input type="radio" name="row-1" data-col="4"></td>
+                    <td><input type="radio" name="row-1" data-col="5"></td>
+                </tr>
+                <tr>
+                    <td>Service</td>
+                    <td><input type="radio" name="row-2" data-col="1"></td>
+                    <td><input type="radio" name="row-2" data-col="2"></td>
+                    <td><input type="radio" name="row-2" data-col="3"></td>
+                    <td><input type="radio" name="row-2" data-col="4"></td>
+                    <td><input type="radio" name="row-2" data-col="5"></td>
+                </tr>
+                <tr>
+                    <td>Hygiene</td>
+                    <td><input type="radio" name="row-3" data-col="1"></td>
+                    <td><input type="radio" name="row-3" data-col="2"></td>
+                    <td><input type="radio" name="row-3" data-col="3"></td>
+                    <td><input type="radio" name="row-3" data-col="4"></td>
+                    <td><input type="radio" name="row-3" data-col="5"></td>
+                </tr>
+                <tr>
+                    <td>Overall</td>
+                    <td><input type="radio" name="row-4" data-col="1"></td>
+                    <td><input type="radio" name="row-4" data-col="2"></td>
+                    <td><input type="radio" name="row-4" data-col="3"></td>
+                    <td><input type="radio" name="row-4" data-col="4"></td>
+                    <td><input type="radio" name="row-4" data-col="5"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="content">
+            <img src="images/beefsteak.png" alt="Beef Steak">
+            <p>Beef Steak</p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td><input type="radio" name="row-1" data-col="1"></td>
+                    <td><input type="radio" name="row-1" data-col="2"></td>
+                    <td><input type="radio" name="row-1" data-col="3"></td>
+                    <td><input type="radio" name="row-1" data-col="4"></td>
+                    <td><input type="radio" name="row-1" data-col="5"></td>
+                </tr>
+                <tr>
+                    <td>Service</td>
+                    <td><input type="radio" name="row-2" data-col="1"></td>
+                    <td><input type="radio" name="row-2" data-col="2"></td>
+                    <td><input type="radio" name="row-2" data-col="3"></td>
+                    <td><input type="radio" name="row-2" data-col="4"></td>
+                    <td><input type="radio" name="row-2" data-col="5"></td>
+                </tr>
+                <tr>
+                    <td>Hygiene</td>
+                    <td><input type="radio" name="row-3" data-col="1"></td>
+                    <td><input type="radio" name="row-3" data-col="2"></td>
+                    <td><input type="radio" name="row-3" data-col="3"></td>
+                    <td><input type="radio" name="row-3" data-col="4"></td>
+                    <td><input type="radio" name="row-3" data-col="5"></td>
+                </tr>
+                <tr>
+                    <td>Overall</td>
+                    <td><input type="radio" name="row-4" data-col="1"></td>
+                    <td><input type="radio" name="row-4" data-col="2"></td>
+                    <td><input type="radio" name="row-4" data-col="3"></td>
+                    <td><input type="radio" name="row-4" data-col="4"></td>
+                    <td><input type="radio" name="row-4" data-col="5"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="content">
+            <img src="images/porkveg.png" alt="Fried Pork and Vegetables">
+            <p>Fried Pork and Vegetables
+                <p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <td>Food</td>
+                            <td><input type="radio" name="row-1" data-col="1"></td>
+                            <td><input type="radio" name="row-1" data-col="2"></td>
+                            <td><input type="radio" name="row-1" data-col="3"></td>
+                            <td><input type="radio" name="row-1" data-col="4"></td>
+                            <td><input type="radio" name="row-1" data-col="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Service</td>
+                            <td><input type="radio" name="row-2" data-col="1"></td>
+                            <td><input type="radio" name="row-2" data-col="2"></td>
+                            <td><input type="radio" name="row-2" data-col="3"></td>
+                            <td><input type="radio" name="row-2" data-col="4"></td>
+                            <td><input type="radio" name="row-2" data-col="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Hygiene</td>
+                            <td><input type="radio" name="row-3" data-col="1"></td>
+                            <td><input type="radio" name="row-3" data-col="2"></td>
+                            <td><input type="radio" name="row-3" data-col="3"></td>
+                            <td><input type="radio" name="row-3" data-col="4"></td>
+                            <td><input type="radio" name="row-3" data-col="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Overall</td>
+                            <td><input type="radio" name="row-4" data-col="1"></td>
+                            <td><input type="radio" name="row-4" data-col="2"></td>
+                            <td><input type="radio" name="row-4" data-col="3"></td>
+                            <td><input type="radio" name="row-4" data-col="4"></td>
+                            <td><input type="radio" name="row-4" data-col="5"></td>
+                        </tr>
+                    </table>
+        </div>
+        <div class="content">
+            <img src="images/spag.png" alt="Spaghetti and Meatballs">
+            <p>Spaghetti and Meatballs
+                <p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <td>Food</td>
+                            <td><input type="radio" name="row-1" data-col="1"></td>
+                            <td><input type="radio" name="row-1" data-col="2"></td>
+                            <td><input type="radio" name="row-1" data-col="3"></td>
+                            <td><input type="radio" name="row-1" data-col="4"></td>
+                            <td><input type="radio" name="row-1" data-col="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Service</td>
+                            <td><input type="radio" name="row-2" data-col="1"></td>
+                            <td><input type="radio" name="row-2" data-col="2"></td>
+                            <td><input type="radio" name="row-2" data-col="3"></td>
+                            <td><input type="radio" name="row-2" data-col="4"></td>
+                            <td><input type="radio" name="row-2" data-col="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Hygiene</td>
+                            <td><input type="radio" name="row-3" data-col="1"></td>
+                            <td><input type="radio" name="row-3" data-col="2"></td>
+                            <td><input type="radio" name="row-3" data-col="3"></td>
+                            <td><input type="radio" name="row-3" data-col="4"></td>
+                            <td><input type="radio" name="row-3" data-col="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Overall</td>
+                            <td><input type="radio" name="row-4" data-col="1"></td>
+                            <td><input type="radio" name="row-4" data-col="2"></td>
+                            <td><input type="radio" name="row-4" data-col="3"></td>
+                            <td><input type="radio" name="row-4" data-col="4"></td>
+                            <td><input type="radio" name="row-4" data-col="5"></td>
+                        </tr>
+                    </table>
+        </div>
+        <div class="content">
+            <img src="images/soup.png" alt="Turmeric Chicken-and-Chickpea Soup">
+            <p>Turmeric Chicken-and-Chickpea Soup
+                <p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                        <tr>
+                            <td>Food</td>
+                            <td><input type="radio" name="row-1" data-col="1"></td>
+                            <td><input type="radio" name="row-1" data-col="2"></td>
+                            <td><input type="radio" name="row-1" data-col="3"></td>
+                            <td><input type="radio" name="row-1" data-col="4"></td>
+                            <td><input type="radio" name="row-1" data-col="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Service</td>
+                            <td><input type="radio" name="row-2" data-col="1"></td>
+                            <td><input type="radio" name="row-2" data-col="2"></td>
+                            <td><input type="radio" name="row-2" data-col="3"></td>
+                            <td><input type="radio" name="row-2" data-col="4"></td>
+                            <td><input type="radio" name="row-2" data-col="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Hygiene</td>
+                            <td><input type="radio" name="row-3" data-col="1"></td>
+                            <td><input type="radio" name="row-3" data-col="2"></td>
+                            <td><input type="radio" name="row-3" data-col="3"></td>
+                            <td><input type="radio" name="row-3" data-col="4"></td>
+                            <td><input type="radio" name="row-3" data-col="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Overall</td>
+                            <td><input type="radio" name="row-4" data-col="1"></td>
+                            <td><input type="radio" name="row-4" data-col="2"></td>
+                            <td><input type="radio" name="row-4" data-col="3"></td>
+                            <td><input type="radio" name="row-4" data-col="4"></td>
+                            <td><input type="radio" name="row-4" data-col="5"></td>
+                        </tr>
+                    </table>
+        </div>
+    </div>
+</body>
+
+</html>
